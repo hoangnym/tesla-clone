@@ -9,7 +9,7 @@ function Section({
   rightBtnText,
 }) {
   return (
-    <Wrap>
+    <Wrap bgImage={backgroundImg}>
       <ItemText>
         <h1>{title}</h1>
         <p>{description}</p>
@@ -33,7 +33,7 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/model-s.jpg");
+  background-image: ${(props) => `url("/images/${props.bgImage}")`};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
