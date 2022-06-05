@@ -40,6 +40,13 @@ function Home() {
         leftBtnText="Order now"
         rightBtnText="Learn more"
       />
+      <Section
+        title="Solar for New Roofs"
+        description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
+        backgroundImg="solar-roof.jpg"
+        leftBtnText="Order now"
+        rightBtnText="Learn more"
+      />
     </Container>
   );
 }
