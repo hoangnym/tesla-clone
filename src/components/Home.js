@@ -33,6 +33,13 @@ function Home() {
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
+      <Section
+        title="Lowest Cost Solar Panels in America"
+        description="Money-back gurantee"
+        backgroundImg="solar-panel.jpg"
+        leftBtnText="Order now"
+        rightBtnText="Learn more"
+      />
     </Container>
   );
 }
