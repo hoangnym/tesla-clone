@@ -109,13 +109,14 @@ const BurgerNav = styled.div`
   right: 0;
   background-color: white;
   width: 300px;
-  z-index: 99;
+  z-index: 16;
   list-style: none;
   padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: start;
-  transform: ${(props) => (props.show ? "translateX(100)" : "translateX(0)")};
+  transform: ${(props) => (props.show ? `translateX(0%)` : `translateX(100%)`)};
+  transition: transform 0.2s ease-in;
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -129,6 +130,7 @@ const BurgerNav = styled.div`
 const CloseWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
+  padding-right: 20px;
 `;
 
 const CustomClose = styled(CloseIcon)`
