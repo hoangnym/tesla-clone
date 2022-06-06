@@ -13,7 +13,10 @@ function Header() {
   return (
     <Container>
       <a href="#">
-        <img src="/images/logo.svg" alt="tesla-logo" />
+        <img
+          src={process.env.PUBLIC_URL + "/images/logo.svg"}
+          alt="tesla-logo"
+        />
       </a>
       <Menu>
         {cars &&

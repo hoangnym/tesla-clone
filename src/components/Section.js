@@ -24,7 +24,10 @@ function Section({
             {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
           </ButtonGroup>
         </Fade>
-        <DownArrow src="/images/down-arrow.svg" alt="Down Arrow" />
+        <DownArrow
+          src={process.env.PUBLIC_URL + "/images/down-arrow.svg"}
+          alt="Down Arrow"
+        />
       </Buttons>
     </Wrap>
   );
@@ -38,7 +41,8 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: ${(props) => `url("./images/${props.bgImage}")`};
+  background-image: ${(props) =>
+    `url(${process.env.PUBLIC_URL}/images/${props.bgImage}`});
   display: flex;
   flex-direction: column;
   justify-content: space-between;
